@@ -118,7 +118,7 @@ function ReadTab({ savedPhrases, onToggleSave }) {
   return (
     <div>
       {/* Lesson grid */}
-      <SecHeader icon="📚" title="Lesson tanlang" sub="30 ta lesson · 1000 collocations" from="#22c55e" to="#14b8a6" ibg="rgba(34,197,94,0.12)" ib="rgba(34,197,94,0.3)" />
+      <SecHeader icon="📚" title="Passages" sub="30 ta lesson · 1000 collocations" from="#22c55e" to="#14b8a6" ibg="rgba(34,197,94,0.12)" ib="rgba(34,197,94,0.3)" />
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(140px,1fr))", gap: 7, maxHeight: 210, overflowY: "auto", marginBottom: 18 }}>
         {ALL_LESSONS.map(ls => (
           <div key={ls.id} onClick={() => selectLesson(ls)}
@@ -420,7 +420,7 @@ function CardsTab({ savedPhrases, onToggleSave }) {
         )}
 
         <button onClick={shuffle} style={{ padding: "9px 20px", borderRadius: 9, border: "1px solid rgba(34,197,94,0.4)", background: "rgba(34,197,94,0.10)", color: "#22c55e", fontSize: 13, cursor: "pointer", fontFamily: "'DM Sans',sans-serif" }}>
-          🔄 Aralashtirish
+          🔄 Return Back
         </button>
       </div>
     </div>
@@ -524,11 +524,11 @@ export default function CollApp() {
   const totalCollocations = ALL_LESSONS.reduce((s, ls) => s + ls.collocations.length, 0);
 
   const TABS = [
-    { id: "read",   label: "📖 O'qish"   },
-    { id: "vocab",  label: "✨ Vocab"     },
+    { id: "read",   label: "📖 Reading"   },
+    { id: "vocab",  label: "✨ Vocabulary"     },
     { id: "quiz",   label: "🧠 Quiz"      },
-    { id: "cards",  label: "🃏 Kartalar"  },
-    { id: "saved",  label: "⭐ Saqlangan" },
+    { id: "cards",  label: "🃏 Cards"  },
+    { id: "saved",  label: "⭐ Saved" },
   ];
 
   return (
