@@ -137,7 +137,7 @@ function ReadTab({ savedPhrases, onToggleSave }) {
         <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
           <button onClick={() => setShowUz(!showUz)}
             style={{ padding: "8px 16px", borderRadius: 9, border: `1px solid ${showUz ? "rgba(34,197,94,0.4)" : "#26264a"}`, background: showUz ? "rgba(34,197,94,0.10)" : "#13131f", color: showUz ? "#22c55e" : "#a0a0b8", fontSize: 13, fontWeight: 500, cursor: "pointer", fontFamily: "'DM Sans',sans-serif" }}>
-            🇺🇿 {showUz ? "O'zbekcha yashirish" : "O'zbekcha ko'rish"}
+            🇺🇿 {showUz ? "Hide Uzbek" : "Show Uzbek"}
           </button>
         </div>
       </div>
